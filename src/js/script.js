@@ -163,10 +163,6 @@ arquivo: "videos/the-neighbourhood.mp4"
     arquivo: "./src/videos/bishop-briggs.mp4"
 },
 {
-    image: "./src/imagens/bombay-bicycle-club.jpeg",
-    arquivo: "./src/videos/bombay-bicycle-club.mp4"
-},
-{
     image: "./src/imagens/cold-war-kids.jpeg",
     arquivo: "./src/videos/cold-war-kids.mp4"
 },
