@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+    <header>Mix Black Box</header>
+
+    <main>
+
+        <div class="container" >
+            <div class="container-player">
+                <h1></h1>
+                <div class="player">
+                    <video  id="video"  onclick= "PlayPause()" onclick= "expandir()" onmouseover= "mostrar()" onmouseout="esconder()" 
+                    poster ="./src/imagens/the-neighbourhood.jpeg" src="./src/videos/the-neighbourhood.mp4" ></video>
+
+                </div> 
+                <div class="progress-warp">
+                    <div id="progress-bar"></div>
+                </div>
+                <div class="control" id="ctrl" onmouseover= "mostrar()" onmouseout="esconder()" >
+                    <div class="container-button"  >
+                        <button class="btn" onclick= retroceder() id="back-button" >
+                            <img  src="./src/imagens/button-rewind.PNG">
+                        </button>
+                        <button class="btn" onclick= "PlayPause()" id="play-button">
+                            <img id="img-play" src="./src/imagens/button-play.PNG">
+                        </button>
+                        <button class="btn" id="next-button">
+                            <img src="./src/imagens/next.PNG">
+                        </button>
+                        <button class="btn" onclick= "stop()" id="stop-button">
+                            <img src="./src/imagens/button-stop.PNG">
+                        </button>
+                        <button class="btn" onclick= "avancar()" id="forward-button">
+                            <img src="./src/imagens/button-fast-forward.PNG">
+                        </button>
+                        <button class="btn" id="volume">
+                            <img src="./src/imagens/volume.PNG" onclick ="mute()" id="volume-img">
+                            <input type="range" min="0" max="100" step="0.5" value="100" id="volumeControl" onchange="volumeUpDown()" >   
+                        </button>
+                        <button class="btn" onclick= "expandir()" id="fullscreen-button">
+                            <img src="./src/imagens/expand.PNG">
+                        </button>
+                        <div class="time-display"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="play-list">
+
+                <div class="videos" id="the-neighbourhood">
+                    <img src="./src/imagens/the-neighbourhood.jpeg" alt="The Neighbourhood">
+                    <span>The Neighbourhood - 'Say My Name'/ 'Cry Me A River' - Black Box Sessions</span>
+
+                </div>
+                <div class="videos" id="aurora">
+                    <img src="./src/imagens/aurora.jpeg" alt="Aurora">
+                    <span>Aurora - 'Warrior' - Black Box Sessions</span>
+
+                </div>
+                <div class="videos" id="bishop-briggs">
+                    <img src="./src/imagens/bishop-briggs.jpeg" alt="Bishop Briggs">
+                    <span>Bishop Briggs 'River' - Black Box Sessions</span>
+
+                </div>
+                <div class="videos" id="bombay-bicycle-club">
+                    <img src="./src/imagens/bombay-bicycle-club.jpeg" alt="Bombay Bicycle Club">
+                    <span>Bombay Bicycle Club - 'Eat,Sleep,Wake (Nothing-But-You)' - Black Box Sessions</span>
+
+                </div>
+                <div class="videos" id="cold-war-kids">
+                    <img src="./src/imagens/cold-war-kids.jpeg" alt="Cold War Kids">
+                    <span>Cold War Kids - 'First' - Black Box Sessions</span>
+
+                </div>
+                <div class="videos" id="james-bay">
+                    <img src="./src/imagens/james-bay.jpeg" alt="James Bay">
+                    <span>James Bay - 'Hold Back The River' - Black Box Sessions</span>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </main>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
